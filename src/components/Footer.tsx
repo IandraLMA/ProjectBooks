@@ -1,6 +1,5 @@
-type Props = {};
 import style from "./Footer.module.css";
-const Footer = (props: Props) => {
+const Footer = () => {
   return (
     <footer className={style.footer}>
       <h3>Faça aqui sua lista de livros favoritos</h3>

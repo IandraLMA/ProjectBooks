@@ -1,20 +1,14 @@
 import styles from "./Register.module.css";
-type Props = {};
-import { useState, useEffect, FormEventHandler, FormEvent } from "react";
-const Register = (props: Props) => {
+import { useState, FormEvent } from "react";
+const Register = () => {
   const [title, seTitle] = useState("");
   const [author, setAuthor] = useState("");
   const [description, setDescription] = useState("");
   const [error, setError] = useState("");
 
-  const book = {
-    title,
-    author,
-    description,
-  };
-
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
+    setError("teste");
   };
 
   return (

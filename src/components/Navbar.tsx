@@ -1,9 +1,8 @@
-type Props = {};
 import { NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import { useMediaQuery } from "react-responsive";
 import { AiOutlineMenu } from "react-icons/ai";
-const Navbar = (props: Props) => {
+const Navbar = () => {
   const MobileMediaQuery = ({ children }: any) => {
     const isMobile = useMediaQuery({ maxWidth: 1 });
     return !isMobile ? children : null;

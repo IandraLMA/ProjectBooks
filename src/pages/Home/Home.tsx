@@ -1,14 +1,14 @@
-import { useState } from "react";
+//import { useState } from "react";
 import styles from "./Home.module.css";
 import BookList from "../BookList/BookList";
 
-type Props = {};
 export interface Book {
   title: string;
   author: string;
   description: string;
 }
-const Home = (props: Props) => {
+const Home = () => {
+  /*
   const [bookList, setBookList] = useState<Book[]>([
     {
       title: "Perdida",
@@ -16,7 +16,7 @@ const Home = (props: Props) => {
       description: "viagem no tempo",
     },
   ]);
-
+*/
   return (
     <>
       <div className={styles.register}>
