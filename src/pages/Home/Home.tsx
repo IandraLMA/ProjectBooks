@@ -1,7 +1,7 @@
+import BookList from "../BookList/BookList";
 import styles from "./Home.module.css";
-import BookList, { Book } from "../BookList/BookList";
 
-const Home = ({ bookList, setBookList }) => {
+const Home = ({ bookList, setBookList }: any) => {
   return (
     <>
       <div className={styles.register}>

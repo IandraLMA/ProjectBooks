@@ -1,8 +1,7 @@
 import styles from "./BookDetail.module.css";
 import { useState, FormEvent } from "react";
-import { Book } from "../../model/Book";
 import { useLocation } from "react-router-dom";
-const BookDetail = ({ bookList, setBookList }) => {
+const BookDetail = ({ bookList }: any) => {
   const location = useLocation();
   const { state } = location;
   var formTitle = "";
@@ -16,7 +15,7 @@ const BookDetail = ({ bookList, setBookList }) => {
     formId = state.from.id;
   }
 
-  const [id, setId] = useState(formId);
+  const [id] = useState(formId);
   const [title, seTitle] = useState(formTitle);
   const [author, setAuthor] = useState(formAuthor);
   const [description, setDescription] = useState(formDescription);

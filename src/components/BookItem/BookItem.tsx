@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import styled from "./BookItem.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Book } from "../../model/Book";
 
 const BookItem = (props: any) => {
   var item = {
@@ -12,13 +13,15 @@ const BookItem = (props: any) => {
     },
   };
 
-  const handleExcluir = (v) => {
-    props.setBookList((current) => current.filter((fruit) => fruit.id !== v));
+  const handleExcluir = (v: string) => {
+    props.setBookList((current: any) =>
+      current.filter((fruit: Book) => fruit.id !== v)
+    );
   };
   return (
     <div className={styled.container_book}>
       <div className={styled.book_photo}>
-        <a onClick={(e) => handleExcluir(props.element.id)}>
+        <a onClick={() => handleExcluir(props.element.id)}>
           <div className={styled.iconTrash}>
             <FontAwesomeIcon icon={["fas", "trash"]} />
           </div>

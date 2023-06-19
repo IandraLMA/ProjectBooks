@@ -15,7 +15,7 @@
   float: right !important;
 }
 .book_photo {
-  background-image: url("../../../public/livros.png");
+  background-image: url("../../../livros.png");
   width: 159.28px;
   position: relative;
   height: 90px;
