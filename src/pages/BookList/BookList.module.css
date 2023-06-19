@@ -1,46 +1,12 @@
-.container_book {
-  background: rgb(219, 185, 185);
-  border: 1px solid #f3d8f3;
-  box-shadow: 0px 1.52693px 3.05387px #d3dae2;
-  border-radius: 2.39947px;
-  width: 159.28px;
+.container_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  padding: 18px 18px 18px 18px;
   height: 196.8px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 5px;
 }
-.book_photo {
-  background-image: url("../../../public/livros.png");
-  width: 159.28px;
-  height: 90px;
-  background-repeat: no-repeat;
-  order: 0;
-}
-
-.container_list_detail {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  height: 106.8px;
-  width: 136px;
-  padding: 0px 10px 10px 10px;
-}
-.book_title {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 11px;
-  color: #ffffff;
-}
-
-.book_title .description {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 8px;
-  color: #ffffff;
-  opacity: 0.8;
-  flex-wrap: nowrap;
+@media screen and (max-width: 376px) {
+  .container_list {
+    justify-content: center;
+  }
 }

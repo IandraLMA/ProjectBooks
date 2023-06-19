@@ -1,31 +1,14 @@
-//import { useState } from "react";
 import styles from "./Home.module.css";
-import BookList from "../BookList/BookList";
+import BookList, { Book } from "../BookList/BookList";
 
-export interface Book {
-  title: string;
-  author: string;
-  description: string;
-}
-const Home = () => {
-  /*
-  const [bookList, setBookList] = useState<Book[]>([
-    {
-      title: "Perdida",
-      author: "Carina Rissi",
-      description: "viagem no tempo",
-    },
-  ]);
-*/
+const Home = ({ bookList, setBookList }) => {
   return (
     <>
       <div className={styles.register}>
         <h1>Livros favoritos</h1>
         <p>Faça aqui sua lista de livros favoritos</p>
       </div>
-      <div className={styles.container_list}>
-        <BookList />
-      </div>
+      <BookList bookList={bookList} setBookList={setBookList} />
     </>
   );
 };
