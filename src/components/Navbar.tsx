@@ -22,7 +22,7 @@ const Navbar = () => {
             <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <NavLink to="/register">Sobre</NavLink>
+            <NavLink to="/register">Cadastrar</NavLink>
           </li>
         </ul>
       </MobileMediaQuery>
